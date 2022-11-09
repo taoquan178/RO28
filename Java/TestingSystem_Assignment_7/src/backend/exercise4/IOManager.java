@@ -1,7 +1,6 @@
 package backend.exercise4;
 
 import backend.exercise3.CheckFile;
-import backend.exercise3.Question10;
 import backend.exercise3.Question2;
 import backend.exercise3.Question4;
 import entity.StudentEx1;
@@ -73,7 +72,7 @@ public class IOManager {
         }
         String file = path +"/"+ fileName+".txt";
         boolean a = CheckFile.CheckIsExist(file);
-        if (a == true){
+        if (a){
             Question4.Question4(file);
             Question2.Question2(path,fileName);
         } else {
@@ -87,18 +86,32 @@ public class IOManager {
         outputStream.close();
     }
 
-    public static Object readObject(Object object ,String filePath) throws IOException, ClassNotFoundException {
-        FileInputStream fileInputStream = new FileInputStream(filePath);
-        ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
-        Object obj = objectInputStream.readObject();
+//    public static Object readObject(Object object ,String filePath) throws IOException, ClassNotFoundException {
+//        FileInputStream fileInputStream = new FileInputStream(filePath);
+//        ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
+//        Object obj = objectInputStream.readObject();
+//
+//        objectInputStream.close();
+//        StudentEx1 studentEx1 = (StudentEx1) obj;
+//        System.out.println(studentEx1.getName());
+//        System.out.println(studentEx1);
+//        fileInputStream.close();
+//        System.out.println("WRITE_FILE_SUCCESS");
+//        System.out.println(obj);
+//        return obj;
+//    }
 
-        objectInputStream.close();
-        StudentEx1 studentEx1 = (StudentEx1) obj;
-        System.out.println(studentEx1.getName());
-        System.out.println(studentEx1);
-        fileInputStream.close();
-        System.out.println("WRITE_FILE_SUCCESS");
-        System.out.println(obj);
-        return obj;
+    public static void readObject(Object object ,String filePath,boolean isContinuing) {
+        try {
+            //mở luồng kết nối đến file để ghi dữ liệu
+            FileOutputStream fos = new FileOutputStream(filePath,isContinuing);
+            //ghi dữ liệu ra file
+            fos.write(object.toString().getBytes());
+            //đóng luồng kết nối lại
+            fos.close();
+            System.out.println("ghi dữ liệu ra file thành công");
+        }catch (Exception e){
+            System.out.println("file không tồn tại");
+        }
     }
 }

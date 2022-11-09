@@ -76,9 +76,9 @@ public class Program4 {
                     StudentEx1 studentEx12 = new StudentEx1(nameStudent2);
                     studentEx1List.add(studentEx12);
                     System.out.println("Nhập vào đường dẫn file: ");
-                    System.out.println("định dạng: C:/Users/Trung Quan/Desktop/new111/quan.txt");
+                    System.out.println("định dạng: C:/Users/Trung Quan/Desktop/new111/quan1.txt");
                     String pathFile4 = CheckFile.CheckisFile();
-                    ex4.readObject(studentEx12,pathFile4);
+                    ex4.readObject(studentEx1List,pathFile4,false);
                     break;
                 default:
                     System.out.println("Mời bạn nhập lại");
