@@ -3,13 +3,12 @@ package org.example.utils;
 import org.example.entity.User;
 
 import java.util.List;
-import java.util.regex.Pattern;
 
 public class Utils {
     public static int getUserID(List<User> userList){
         for (int i = 0; i < userList.size(); i++) {
             if(i == (userList.size() -1)){
-                return i+1;
+                return userList.get(i).getId();
             }
         }
         return 0;
@@ -24,25 +23,31 @@ public class Utils {
         return false;
     }
 
-    public static boolean checkUserEmail(List<User> userList, String email){
-        for(User userAray : userList){
+    public static int checkUserEmail(List<User> userListAdmin, List<User> userListEmployee, String email){
+        for(User userAray : userListAdmin){
             if (userAray.getEmail().equals(email)){
-                return true;
+                return 2;
             }
         }
-        return false;
+        for(User userAray : userListEmployee){
+            if (userAray.getEmail().equals(email)){
+                return 3;
+            }
+        }
+        return 1;
     }
 
-    public static boolean checkUserPassword(List<User> userList, String password){
-        if (Pattern.matches("[a-zA-Z0-9_-]{6,12}$", password)){
-            for(User userAray : userList){
+    public static int checkUserPassword(List<User> userListAdmin, List<User> userListEmployee, String password){
+            for(User userAray : userListAdmin){
                 if (userAray.getPassword().equals(password)){
-                    return true;
+                    return 2;
                 }
             }
-        }else {
-            System.err.println("Password không đúng định dạng!");
+        for(User userAray : userListEmployee){
+            if (userAray.getPassword().equals(password)){
+                return 3;
+            }
         }
-        return false;
+        return 1;
     }
 }

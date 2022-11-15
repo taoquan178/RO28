@@ -88,4 +88,27 @@ public class UserRepository {
         return Result;
     }
 
+    public List<User> getListUsersAdmin() throws SQLException {
+        List<User> userList = new ArrayList<>();
+        String sql = "SELECT * FROM `User` T1 JOIN `Admin` T2 ON T1.UserID = T2.UserID ORDER BY T1.UserID";
+        Statement st = con.createStatement();
+        ResultSet rs = st.executeQuery(sql);
+        while (rs.next()) {
+            Admin admin = new Admin(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getInt(5));
+            userList.add(admin);
+        }
+        return userList;
+    }
+
+    public List<User> getListUsersEmployee() throws SQLException {
+        List<User> userList = new ArrayList<>();
+        String sql1 = "SELECT * FROM `User` T1 JOIN `Employee` T2 ON T1.UserID = T2.UserID ORDER BY T1.UserID";
+        Statement st1 = con.createStatement();
+        ResultSet rs1 = st1.executeQuery(sql1);
+        while (rs1.next()) {
+            Employee employee = new Employee(rs1.getInt(1),rs1.getString(2),rs1.getString(3),rs1.getString(4), rs1.getString(5));
+            userList.add(employee);
+        }
+        return userList;
+    }
 }

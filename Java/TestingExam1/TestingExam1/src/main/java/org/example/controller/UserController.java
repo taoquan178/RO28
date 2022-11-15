@@ -5,11 +5,6 @@ import org.example.entity.Employee;
 import org.example.entity.User;
 import org.example.service.UserService;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import static org.example.MenuAdmin.menuAdmin;
-
 public class UserController {
     private final UserService userService;
 
@@ -17,17 +12,12 @@ public class UserController {
         this.userService = userService;
     }
 
-    public List<User> getListUsers(){
-        List<User> users = new ArrayList<>();
+    public void getListUsers(){
         try {
-            users = userService.getListUsers();
-            for (User user : users){
-                System.out.println(user);
-            }
+            userService.getListUsers();
         }catch (Exception e){
             System.err.println("Lấy danh sách user không thành công! "+ e.getMessage());
         }
-        return users;
     }
 
     public void createUserAdmin(User user,Admin admin){
@@ -62,26 +52,17 @@ public class UserController {
         }
     };
 
-    public List<User> getList(){
-        List<User> users = new ArrayList<>();
+    public void getList(){
         try {
-            users = userService.getList();
-            for (User user : users){
-                System.out.println("ID: "+user.getId()+"- FullName: "+ user.getName() + "- Email: "+ user.getEmail());
-            }
+            userService.getList();
         }catch (Exception e){
             System.err.println("Lấy danh sách user không thành công! "+ e.getMessage());
         }
-        return users;
     }
 
     public void login(String email, String password){
         try {
-            boolean loginAdmin = userService.login(email,password);
-            if (loginAdmin){
-                System.out.println("Đăng nhập thành công!");
-                menuAdmin();
-            }
+            userService.login(email,password);
         }catch (Exception e){
             System.err.println("Đăng nhập thất bại!");
         }

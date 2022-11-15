@@ -20,6 +20,7 @@ public class MenuAdmin {
             System.out.println("3: Get user by id                        |");
             System.out.println("4: Delete user by id                     |");
             System.out.println("5: Show list user                        |");
+            System.out.println("6: Create employee                       |");
             System.out.println("0: Exit Menu Admin                       |");
             System.out.println("==========================================");
             System.out.println("Mời bạn nhập lựa chọn: ");
@@ -29,11 +30,11 @@ public class MenuAdmin {
                     return;
                 case 1:
                     System.out.println("Nhập vào họ tên user: ");
-                    String fullName = ScannerUtils.inputString();
+                    String fullName = ScannerUtils.inputStringFullName();
                     System.out.println("Nhập vào email: ");
-                    String email = ScannerUtils.inputString();
+                    String email = ScannerUtils.inputStringEmail();
                     System.out.println("Nhập vào password: ");
-                    String password = ScannerUtils.inputStringV2();
+                    String password = ScannerUtils.inputStringPassword();
                     User user = new User(0, fullName, email, password);
                     System.out.println("Mời bạn chọn loại user muốn tạo: ");
                     System.out.println("1: Tạo user Admin - 2: Tạo user Employee");
@@ -70,6 +71,17 @@ public class MenuAdmin {
                     break;
                 case 5:
                     controller.getList();
+                    break;
+                case 6:
+                    System.out.println("Nhập vào họ tên user: ");
+                    String fullName1 = ScannerUtils.inputStringFullName();
+                    System.out.println("Nhập vào email: ");
+                    String email1 = ScannerUtils.inputStringEmail();
+                    System.out.println("Nhập kỹ năng chuyên môn: ");
+                    String proSkill = ScannerUtils.inputString();
+                    Employee employee1 = new Employee(proSkill);
+                    User user1 = new User(0, fullName1, email1, "123456");
+                    controller.createUserEmployee(user1, employee1);
                     break;
                 default:
                     System.err.println("Bạn nhập vào sai! Mời bạn nhập lại cho đúng");

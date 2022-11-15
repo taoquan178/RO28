@@ -15,6 +15,7 @@ public class ScannerUtils {
 
 	private static Scanner sc = new Scanner(System.in);
 
+	public static final Pattern REGEX_EMAIL = Pattern.compile("^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,6}$", Pattern.CASE_INSENSITIVE);
 	public static Integer inputInt() {
 		while (true) {
 			try {
@@ -57,13 +58,36 @@ public class ScannerUtils {
 		return LocalDate.parse(localdate);
 	}
 
-	public static String inputStringV2() {
+	public static String inputStringPassword() {
 		while (true) {
 			String string = sc.nextLine().trim();
 			if (Pattern.matches("[a-zA-Z0-9_-]{6,12}$", string)) {
 				return string;
 			} else {
 				System.err.println("Dữ liệu ban nhập vào phải từ ( 6-12 kí tự và có chữ thường, chữ hoa và số ): ");
+			}
+		}
+	}
+
+	public static String inputStringEmail() {
+		while (true) {
+			String string = sc.nextLine().trim();
+			String regexPattern = "^(.+)@(\\S+)$";
+			if (Pattern.compile(regexPattern).matcher(string).matches()) {
+				return string;
+			} else {
+				System.err.println("Dữ liệu ban nhập vào phải là email");
+			}
+		}
+	}
+
+	public static String inputStringFullName() {
+		while (true) {
+			String string = sc.nextLine().trim();
+			if (Pattern.matches("^[A-Z a-zÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚÝàáâãèéêìíòóôõùúýĂăĐđĨĩŨũƠơƯưẠ-ỹ]+$", string)) {
+				return string;
+			} else {
+				System.err.println("Họ tên không được nhập số và kí tự đặc biệt");
 			}
 		}
 	}

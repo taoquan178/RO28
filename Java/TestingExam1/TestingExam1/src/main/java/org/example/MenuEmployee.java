@@ -5,16 +5,18 @@ import org.example.repository.UserRepository;
 import org.example.service.impl.UserserviceImpl;
 import org.example.utils.ScannerUtils;
 
-public class Application {
-    public static void main(String[] args) {
+public class MenuEmployee {
+    public static void menuEmployee() {
         UserRepository repository = new UserRepository();
         UserserviceImpl viceImpl = new UserserviceImpl(repository);
         UserController controller = new UserController(viceImpl);
         while (true){
-            System.out.println("==============Menu Application============");
-            System.out.println("1: Login user                            |");
+            System.out.println("================Menu Employee==============");
+            System.out.println("1: Login user admin                      |");
             System.out.println("2: Show list user Admin,Employee         |");
-            System.out.println("0: Exit application                      |");
+            System.out.println("3: Get user by id                        |");
+            System.out.println("4: Show list user                        |");
+            System.out.println("0: Exit employee                         |");
             System.out.println("==========================================");
             System.out.println("Mời bạn nhập lựa chọn: ");
             int choice = ScannerUtils.inputInt();
@@ -31,9 +33,18 @@ public class Application {
                 case 2:
                     controller.getListUsers();
                     break;
+                case 3:
+                    System.out.println("Mời bạn nhập vào id user cần tìm: ");
+                    int getUserByID = ScannerUtils.inputInt();
+                    controller.getUserByID(getUserByID);
+                    break;
+                case 4:
+                    controller.getList();
+                    break;
                 default:
                     System.err.println("Bạn nhập vào sai! Mời bạn nhập lại cho đúng");
             }
         }
+
     }
 }
