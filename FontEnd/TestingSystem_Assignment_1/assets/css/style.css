@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #edeaea;
+}
+
+#heading .hBox1{
+    background-color: black;
+    height: 30px;
+    line-height: 20px;
+}
+
+.hBox1 .spanText{
+    color: white;
+    font-size: 12px
+}
+
+.hBox2 {
+    background: #f0a52b;
+    height: 70px;
+    text-align: center;
+}
+
+.hBox3 {
+    width: 100%;
+    height: 40px;
+    background-color: red;
+}
+
+.quangCao {
+    width: 70%;
+    height: 80px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid orange;
+}
+
+#content {
+    width: 80%;
+    background-color: white;
+    margin: auto;
+}
+.headerContent ul {
+    border-style: outset;
+}
+
+.headerContent ul li{
+    margin-right: 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 15px 10px 10px 25px;
+}
+
+.bodyContent {
+    display: flex;
+}
+
+.bodyContent .left {
+    width: 70%;
+    margin-left: 50px;
+    margin-top: 30px;
+    padding-right: 20px;
+}
+
+.bodyContent .left .img1 img{
+    width: 100%;
+}
+
+.bodyContent .left h3{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.bodyContent .left .ThamKhaoThem{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.bodyContent .left .ThamKhaoThem p{
+  display: inline-block;
+  margin: 0px;
+
+}
+.bodyContent .left .ThamKhaoThem .divImg {
+    width: 150px;
+}
+
+.bodyContent .left .ThamKhaoThem img {
+    width: 90%;
+}
+
+.bodyContent .left .endContent{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.bodyContent .right {
+    width: 30%;
+    border: 1px solid blue;
+    margin-top: 30px;
+
+}
+
+#end {
+    height: 100px;
+    background-color: rgb(246, 240, 240);
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise2-Question4</title>
+</head>
+<body>
+    <div id="registerFrom">
+    <form> 
+        <fieldset>
+            <legend> <h2>Register</h2> </legend>
+            <i> Please <b>fill in this form</b> to create an account</i>
+            <div class="nav"><span>Full name</span> <span class="starRed">*</span> </div>
+            <input type="text" name="FullName" autofocus placeholder="Input your fullname...">
+            <div class="nav"><span>Username</span> <span class="starRed">*</span> </div>
+            <input type="text" name="UserName" placeholder="Input your username...">
+            <div class="nav"><span>Password</span> <span class="starRed">*</span> </div>
+            <input type="password" name="Password" placeholder="Input your password...">
+            <div class="nav"><span>Email</span> <span class="starRed">*</span> </div>
+            <input type="email" name="Email" placeholder="Input your email...">
+            <div class="nav"><span>Telephone number</span> <span class="starRed">*</span> </div>
+            <input type="number" name="Number" placeholder="Input your number...">
+            <p>Input Object:</p>
+            <input type="radio" name="Object" value="Student"> Student
+            <input type="radio" name="Object" value="Teacher">Teacher
+            <p>Favorite:</p>
+            <input type="checkbox" name="Favorite" value="Badminton"> Badminton
+            <input type="checkbox" name="Favorite" value="Volleyball"> Volleyball
+            <input type="checkbox" name="Favorite" value="Football"> Football
+            <div class="nav"><span>Your picture</span> <span class="starRed">*</span> </div>
+            <input type="file" name="pic">
+            <p></p>
+            <input type="submit" name="Submit" value="Đăng ký">
+        </fieldset>        
+    </form>
+    </div>
+</body>
+<style>
+#registerFrom {
+    display: flex;
+    justify-content: center;
+}
+#registerFrom .nav{
+    margin: 15px 0px 5px 0px;
+}
+
+#registerFrom .starRed{
+    color: red;
+}
+
+</style>
+</html>
