@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="icon" type="imge/x-icon" href="./assets/img/favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese">
+    <title>Shopee Việt Nam | Mua và Bán Trên Ứng Dụng Di Động Hoặc Website</title>
+</head>
+<body>
+    <div class="app">
+        <!-- header -->
+        <header class="header">
+            <div class="gird">
+                <!-- navbar -->
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-link" href="https://banhang.shopee.vn/account/signin?next=%2F">Kênh Người Bán</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item-qr header__navbar-item--separator">
+                            <a class="header__navbar-item-link" href="https://shopee.vn/web">Tải ứng dụng</a>
+                            <!-- QR code -->
+                            <div class="header__navbar-item-qr-img">
+                                <img class="header__navbar-item-qr-img--img" src="./assets/img/Screenshot 2022-11-25 163336.png" alt="QR Code">
+                            </div>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--separator">
+                            <span class="header__navbar-item--no-pointer">Kết nối</span>
+                            <a class="header__navbar-item-icon--link" href="https://www.facebook.com/ShopeeVN">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="header__navbar-item-icon--link" href="https://www.instagram.com/Shopee_VN/">
+                                <i class="fa-brands fa-instagram"></i>  
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item header__navbar-item-notification">
+                            <a class="header__navbar-item-icon--link " href="">
+                                <i class="fa-solid fa-bell"></i> 
+                                <span>Thông Báo</span>
+                            </a>
+                            <div class="header__notification">
+                                <div class="header__notification-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </div>
+                                <ul class="header__notification-list">
+                                    <li class="header__notification-item">
+                                      <a href="" class="header__notification-item-info">
+                                        <img src="./assets/img/notification.png" alt="">
+                                        <div class="header__notification-item-title">
+                                            <span class="header__notification-item-title--name">
+                                                Giao kiện hàng thành công
+                                            </span>
+                                            <span class="header__notification-item-title--description">
+                                                Kiện hàng 
+                                                <strong> SPXVN02545057019B </strong>
+                                                của đơn hàng
+                                                <strong> 2211155XJCQUMQ  </strong>
+                                                đã giao thành công đến bạn.
+                                            </span>
+                                        </div>
+                                      </a>
+                                    </li>
+                                    <li class="header__notification-item">
+                                        <a href="" class="header__notification-item-info">
+                                          <img src="./assets/img/notification.png" alt="">
+                                          <div class="header__notification-item-title">
+                                              <span class="header__notification-item-title--name">
+                                                Bạn có đơn hàng đang trên đường giao
+                                              </span>
+                                              <span class="header__notification-item-title--description">
+                                                📣Shipper bảo rằng: đơn hàng
+                                                  <strong> 221112URTM1FHX </strong>
+                                                  của bạn vẫn đang trong quá trình vận chuyển và dự kiến được giao trong 1-2 ngày tới. Vui lòng bỏ qua thông báo này nếu bạn đã nhận được hàng nhé!😊
+                                              </span>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li class="header__notification-item">
+                                        <a href="" class="header__notification-item-info">
+                                          <img src="./assets/img/notification.png" alt="">
+                                          <div class="header__notification-item-title">
+                                              <span class="header__notification-item-title--name">
+                                                Đánh giá sản phẩm
+                                              </span>
+                                              <span class="header__notification-item-title--description">
+                                                shop_au_han đã đánh giá đơn hàng 221112URTM1FHX. Vui lòng đánh giá sản phẩm trước ngày 19-12-2022.
+                                              </span>
+                                          </div>
+                                        </a>
+                                      </li>
+                                      <li class="header__notification-item">
+                                        <a href="" class="header__notification-item-info">
+                                          <img src="./assets/img/notification.png" alt="">
+                                          <div class="header__notification-item-title">
+                                              <span class="header__notification-item-title--name">
+                                                  Giao kiện hàng thành công
+                                              </span>
+                                              <span class="header__notification-item-title--description">
+                                                  Kiện hàng SPXVN02545057019B của đơn hàng 2211155XJCQUMQ đã giao thành công đến bạn.
+                                              </span>
+                                          </div>
+                                        </a>
+                                      </li>
+                                </ul>
+                                <div class="header__notification-footer">
+                                    <span class="header__notification-footer-btn">Xem tất cả</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-icon--link" href="">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </a>
+                            <a class="header__navbar-item-link" href="">
+                                Hỗ Trợ
+                            </a>
+                            
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-icon--link header__navbar-language " href="">
+                                <i class="fa-sharp fa-solid fa-globe"></i>
+                                <span>Tiếng Việt</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <ul class="header__navbar-item-language-list">
+                                    <li class="header__navbar-item-language-country">Tiếng Việt</li>
+                                    <li class="header__navbar-item-language-country">English</li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <div class="header__navbar-item--avata"></div>
+                            <a class="header__navbar-item-link header__navbar-item-link--strong" href="">
+                                nguyentrungquan178
+                                <div class="header__navbar-item-user">
+                                    <ul class="header__navbar-item-user-account">
+                                        <li class="header__navbar-item-user-account-title">Tài Khoản Của Tôi</li>
+                                        <li class="header__navbar-item-user-account-title">Đơn Mua</li>
+                                        <li class="header__navbar-item-user-account-title">Đăng Xuất</li>
+                                    </ul>
+                                </div>
+                            </a>
+                            
+                        </li>
+                    </ul>
+
+                    
+                </nav>
+                <!-- end navbar -->
+                <div class="header__search">
+                    <div class="header__search-item">
+                        <img class="header__search-item--logo" src="./assets/img/logo_shopee_white.png" alt="">
+                    </div>
+                    <div class="header__search-item header__search-search">
+                        <input type="text" placeholder="Nhập để tìm kiếm sản phấm" class="header__search-search-inp">
+                        <div class="header__search-search-select">
+                            Trong shop
+                            <i class="fa-solid fa-angle-down header__search-search-select--icon"></i>
+                            <ul class="header__search-search-select-type">
+                                <li>Trong shop
+                                    <i class="fa-solid fa-check header__search-check"></i>
+                                </li>
+                                <li>Ngoài shop</li>
+                            </ul>
+                        </div>
+                        <button class="header__search-search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <div class="header__search-item">
+                        <div class="header__search-cart">
+                            <a class="header__search-item-cart" href="">
+                                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+                            </a>
+                            <span class="header__search-item-message" >3</span>
+                            <div class="header__cartmessagger">
+                                <div class="header__cartmessagger-heading">
+                                    <h4>Sản phẩm đã thêm</h4>
+                                </div>
+                                <ul class="header__cartmessagger-list">
+                                    <li class="header__cartmessagger-list-item">
+                                        <img src="./assets/img/products/iphone11.png" alt="" class="header__cartmessagger-list-img">
+                                        <div class="header__cartmessa-list-information">
+                                            <div class="header__cartmessa-list-information-header">
+                                                <h5 class="header__information-info-name" >Iphone 11 128GB VNA</h5>
+                                                <div class="header__cartmessa-list-information-info-price">
+                                                    <span class="header__info-price">11.490.000đ</span>
+                                                    <span>x</span>
+                                                    <span class="header__info-OL">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cartmessa-list-information-body">
+                                                <h6 class="header__information-info-color">Màu sắc: Vàng hồng</h6>
+                                                <span class="header__information-info-delete">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cartmessagger-list-item">
+                                        <img src="./assets/img/products/iphone12.png" alt="" class="header__cartmessagger-list-img">
+                                        <div class="header__cartmessa-list-information">
+                                            <div class="header__cartmessa-list-information-header">
+                                                <h5 class="header__information-info-name" >Iphone 12 255GB VNA</h5>
+                                                <div class="header__cartmessa-list-information-info-price">
+                                                    <span class="header__info-price">21.990.000đ</span>
+                                                    <span>x</span>
+                                                    <span class="header__info-OL">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cartmessa-list-information-body">
+                                                <h6 class="header__information-info-color">Màu sắc: Xanh</h6>
+                                                <span class="header__information-info-delete">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cartmessagger-list-item">
+                                        <img src="./assets/img/products/iphone14.png" alt="" class="header__cartmessagger-list-img">
+                                        <div class="header__cartmessa-list-information">
+                                            <div class="header__cartmessa-list-information-header">
+                                                <h5 class="header__information-info-name" >Iphone 14 525GB VNA</h5>
+                                                <div class="header__cartmessa-list-information-info-price">
+                                                    <span class="header__info-price">28.490.000đ</span>
+                                                    <span>x</span>
+                                                    <span class="header__info-OL">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cartmessa-list-information-body">
+                                                <h6 class="header__information-info-color">Màu sắc: Vàng</h6>
+                                                <span class="header__information-info-delete">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="header__cartmessagger-footer">
+                                    <a href="" class="header__cartmessagger-footer-showcart">Xem giỏ hàng</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- container -->
+        <div class="container">
+            <div class="grid wide">
+                <div class="row container__content">
+                    <!-- col left -->
+                    <div class="col l-2 m-0 c-0">
+                        <div class="container__category">
+                            <h3 class="category__heading">Danh mục</h3>
+                            <ul class="container_category-list">
+                                <li class="container_category-item">
+                                    <a class="container_category-link container_category-link--color" href="#">Điện thoại</a>
+                                </li>
+                                <li class="container_category-item">
+                                    <a class="container_category-link container_category-link--border-top" href="#">Thiết bị điện tử</a>
+                                </li>
+                                <li class="container_category-item">
+                                    <a class="container_category-link container_category-link--border-top" href="#">Máy tính & Laptop</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- col right -->
+                    <div class="col l-10 m-12 c-12">
+                        <!-- navbar container -->
+                        <div class="container__nav">
+                            <span class="container__nav-item container__nav-item--title">Sắp xếp theo</span>
+                            <button class="container__nav-item">Phổ biến</button>
+                            <button class="container__nav-item container__nav-item--orange">Mới nhất</button>
+                            <button class="container__nav-item">Bán chạy</button>
+                            <select class="container__nav-item" name="price" id="">
+                                <option class="container__nav-item-option" value="thấp">Giá: Thấp đến cao</option>
+                                <option class="container__nav-item-option" value="cao">Giá: Cao đến thấp</option>
+                            </select>
+                            <div class="container__nav-right">
+                                <span class="container__nav-page">
+                                    <span class="container__nav-page-num">1</span>/10
+                                </span>
+                                <div class="container__nav-control">
+                                    <a href="" class="container__nav-control-link container__nav-control-link--grey">
+                                        <i class="home-filter__page-icon fas fa-angle-left"></i>
+                                    </a>
+                                    <a href="" class="container__nav-control-link">
+                                        <i class="home-filter__page-icon fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- product container -->
+                        <div class="container__product">
+                            <div class="row">
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone11.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 11 64GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">11.490.000đ</span>
+                                                <span class="product__new-price">9.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone12.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 12 255GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">23.490.000đ</span>
+                                                <span class="product__new-price">20.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone14.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 14 525GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">36.490.000đ</span>
+                                                <span class="product__new-price">34.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone11.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 11 64GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">11.490.000đ</span>
+                                                <span class="product__new-price">9.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone11.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 11 64GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">11.490.000đ</span>
+                                                <span class="product__new-price">9.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone11.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 11 64GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">11.490.000đ</span>
+                                                <span class="product__new-price">9.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone12.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 12 255GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">23.490.000đ</span>
+                                                <span class="product__new-price">20.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone14.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 14 525GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">36.490.000đ</span>
+                                                <span class="product__new-price">34.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone11.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 11 64GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">11.490.000đ</span>
+                                                <span class="product__new-price">9.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone11.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 11 64GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">11.490.000đ</span>
+                                                <span class="product__new-price">9.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone11.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 11 64GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">11.490.000đ</span>
+                                                <span class="product__new-price">9.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone12.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 12 255GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">23.490.000đ</span>
+                                                <span class="product__new-price">20.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone14.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 14 525GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">36.490.000đ</span>
+                                                <span class="product__new-price">34.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone12.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 12 255GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">23.490.000đ</span>
+                                                <span class="product__new-price">20.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col l-2-4 m-4 c-12">
+                                    <a href="#" class="container__product-item">
+                                        <div class="container__product-item-img">
+                                            <img src="./assets/img/products/iphone14.png" alt="">
+                                        </div>
+                                        <div class="container__product-item-info">
+                                            <div class="container__product-item-name">
+                                                Iphone 14 525GB chính hãng VNA
+                                            </div>
+                                            <div class="container__product-item-price">
+                                                <span class="product__old-price">36.490.000đ</span>
+                                                <span class="product__new-price">34.490.000đ</span>
+                                            </div>
+                                            <div class="container__product-item-action">
+                                                <span class="product-item-action-favourite">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                <span class="product-item-action-sold">100 đã bán</span>
+                                                <span class="product-item-action-star">
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="product__star--gold fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </span>
+                                            </div>
+                                            <div class="product-item-origin">
+                                                <span class="product__original-product">Apple</span>
+                                                <span class="product__place-of-production">Mỹ</span>
+                                            </div>
+                                        </div>
+                                        <div class="container__product-favourite">
+                                            <i class="fas fa-check"></i>
+                                            <span>Yêu thích</span>
+                                        </div>
+                                        <div class="container__product-sale-off">
+                                            <span class="container__product-sale-off-percent">20%</span>
+                                            <span class="container__product-sale-off-label">GIẢM</span>
+                                        </div>
+                                    </a>
+                                </div>
+                               
+                            </div>
+                            <!--  product footer container -->
+                            <div class="container__product-footer">
+                                <ul class="container__product-list">
+                                    <li class="container__product-footer-item">
+                                        <a href="#" class="container__product-footer-link">
+                                            <i class="fas fa-angle-left"></i>
+                                        </a>
+                                    </li>
+                                    <li class="container__product-footer-item">
+                                        <a href="#" class="container__product-footer-link container__product-footer-item--here">1</a>
+                                    </li>
+                                    <li class="container__product-footer-item">
+                                        <a href="#" class="container__product-footer-link">2</a>
+                                    </li>
+                                    <li class="container__product-footer-item">
+                                        <a href="#" class="container__product-footer-link">3</a>
+                                    </li>
+                                    <li class="container__product-footer-item">
+                                        <a href="#" class="container__product-footer-link">4</a>
+                                    </li>
+                                    <li class="container__product-footer-item">
+                                        <a href="#" class="container__product-footer-link">5</a>
+                                    </li>
+                                    <li class="container__product-footer-item">
+                                        <a href="#" class="container__product-footer-link">...</a>
+                                    </li>
+                                    <li class="container__product-footer-item">
+                                        <a href="#" class="container__product-footer-link">10</a>
+                                    </li>
+                                    <li class="container__product-footer-item">
+                                        <a href="#"  class="container__product-footer-link">
+                                            <i class="fas fa-angle-right"></i>
+                                        </a>
+                                    </li>
+                               </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/12004d9e0b.js" crossorigin="anonymous"></script>
+</html>
