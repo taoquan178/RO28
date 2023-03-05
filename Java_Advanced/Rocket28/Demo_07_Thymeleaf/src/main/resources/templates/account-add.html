@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form th:action="${'/account/save'}" method="post">
+        <p>Product Name</p>
+        <input type="text" name="productName" />
+
+        <p>Price</p>
+        <input type="text" name="price" />
+
+        <p></p>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

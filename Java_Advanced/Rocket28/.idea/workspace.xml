@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bce1631f-cdf7-4b77-8653-e35a1f30fed2" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectId" id="2IMNOQ2dISYFzEQKUNLmCEs0hCl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../RollaBackCode/Spring_Web_Ban_Hang" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.14437869" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Rocket28\Spring_Web_Ban_Hang\src\main\java\com\tn\configexception" />
+      <recent name="D:\Rocket28\Spring_Web_Ban_Hang\src\main\resources\templates" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tn.configvalidate" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringWebBanHangApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Spring_Web_Ban_Hang" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tn.SpringWebBanHangApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bce1631f-cdf7-4b77-8653-e35a1f30fed2" name="Changes" comment="" />
+      <created>1669987465090</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669987465090</updated>
+      <workItem from="1669987466902" duration="76000" />
+      <workItem from="1672803435948" duration="298000" />
+      <workItem from="1672803763183" duration="58000" />
+      <workItem from="1672804225132" duration="1821000" />
+      <workItem from="1672832299735" duration="15000" />
+      <workItem from="1672833811297" duration="9674000" />
+      <workItem from="1672898984496" duration="1793000" />
+      <workItem from="1672909455869" duration="28000" />
+      <workItem from="1672909498538" duration="2502000" />
+      <workItem from="1672922516015" duration="9019000" />
+      <workItem from="1672972187568" duration="43000" />
+      <workItem from="1672973277666" duration="2266000" />
+      <workItem from="1672981796367" duration="17000" />
+      <workItem from="1672986789084" duration="4686000" />
+      <workItem from="1672995963564" duration="2910000" />
+      <workItem from="1673014221948" duration="1328000" />
+      <workItem from="1673016009578" duration="375000" />
+      <workItem from="1673256081090" duration="5190000" />
+      <workItem from="1673261342233" duration="1007000" />
+      <workItem from="1673263821343" duration="15105000" />
+      <workItem from="1673280854543" duration="595000" />
+      <workItem from="1673281558888" duration="2225000" />
+      <workItem from="1673283941411" duration="1537000" />
+      <workItem from="1673323776850" duration="650000" />
+      <workItem from="1673326747775" duration="647000" />
+      <workItem from="1673327670747" duration="6573000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

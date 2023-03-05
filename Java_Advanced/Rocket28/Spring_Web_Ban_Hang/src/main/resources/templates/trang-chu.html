@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" th:href="${'/css/bootstrap.min.css'}">
+    <script th:src="${'/js/jquery.min.js'}"></script>
+</head>
+<body>
+    <div>
+        <h3 style="text-align:center">Trang Chủ</h3>
+        <h3 style="text-align:center" >
+            <Span>Xin chào: </Span>
+            <Span th:text="${AccountLogin.fullName}"></Span>
+        </h3>
+    </div>
+    <div class="container">
+        <div>
+            <div class="btn-group " >
+                <button type="button" class="btn btn-primary"><a style="color: white" th:href="${'/admin/account/home'}">Account</a></button>
+                <button type="button" class="btn btn-primary"><a style="color: white" th:href="${'/admin/department/home'}">Department</a></button>
+            </div>
+            <a class="btn btn-primary" style="float: right" th:href="${'/logout'}">Đăng Xuất</a>
+        </div>
+        <div>
+            <h3 style="text-align:center" >Account</h3>
+            <table class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>FullName</td>
+                    <td>Type</td>
+                    <td>Email</td>
+                    <td>Deprartment</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="obj : ${listAccount}">
+                    <td th:text="${obj.id}">Id</td>
+                    <td th:text="${obj.name}">Name</td>
+                    <td th:text="${obj.fullName}">FullName</td>
+                    <td th:text="${obj.type}">Type</td>
+                    <td th:text="${obj.email}">Email</td>
+                    <td >
+                        <span th:text="${obj.departmentName}" th:if="${obj.departmentName != null}"></span>
+                        <span th:if="${obj.departmentName == null}"> chưa có phòng ban</span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div style="width: 50%">
+            <h3 style="text-align:center">Department</h3>
+            <table class="table table-striped table-bordered">
+                <thead>
+                <tr>
+                    <td>Department Id</td>
+                    <td>Department Name</td>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="obj : ${ListDepratment}" >
+                    <td th:text="${obj.id}">Id</td>
+                    <td th:text="${obj.name}">Name</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+    <script th:src="${'/js/bootstrap.min.js'}"></script>
+</html>

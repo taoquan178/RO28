@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/../BTVN_02_Hibernate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../BTVN_03_01_One_To_One/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Demo_02_Enum/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Demo_03_01_One_To_Many/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Demo_05_01_Spring_Create_Api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Demo_05_02_Spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Demo_07/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Demo_07_Thymeleaf/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Demo_07_Thymeleaf/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Demo_08_ModelMapper/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Demo_09_Validate_Data/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Demo_10_01/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Demo_10_Spring_Security_Noop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Spring_Web_Ban_Hang/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../Tn_Java_Advance_09_09_Config_Swagger/src/main/java" charset="UTF-8" />
+  </component>
+</project>

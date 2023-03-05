@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Chủ</title>
+
+    <link rel="stylesheet" th:href="${'/css/bootstrap.min.css'}" />
+    <script th:src="${'/js/jquery-3.6.3.js'}"></script>
+
+</head>
+<body>
+    <h3>Trang Chủ</h3>
+    <a class="btn btn-primary" th:href="${'/account/add'}">Add</a>
+
+<!--    <span th:text="${name}"></span>-->
+<!--    <span th:text="${age}"></span>-->
+
+<!--    <p th:text="${name}"></p>-->
+<!--    <p th:text="${age}"></p>-->
+
+<!--    <p>Product</p>-->
+<!--    <p>Product Id: <span th:text="${product.id}"></span></p>-->
+<!--    <p>Product Name: <span th:text="${product.productName}"></span></p>-->
+<!--    <p>Price: <span th:text="${product.price}"></span></p>-->
+
+    <h3>List Product</h3>
+    <table class="table table-bordered table-hover table-striped">
+        <thead>
+            <tr>
+                <td>Id</td>
+                <td>Product Name</td>
+                <td>Price</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr th:each="obj : ${listProduct}">
+                <td th:text="${obj.id}">Id</td>
+                <td th:text="${obj.productName}">Product Name</td>
+                <td th:text="${obj.price}">Price</td>
+
+                <td><a th:href="${'/account/edit/' + obj.id}" class="btn btn-warning">Edit</a></td>
+                <td><a th:href="${'/account/delete/' + obj.id}" class="btn btn-danger">Delete</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script th:src="${'/js/bootstrap.min.js'}"></script>
+</body>
+</html>

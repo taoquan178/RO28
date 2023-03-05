@@ -1,0 +1,25 @@
+2023-03-05 17:44:08,756 INFO com.tn.SpringWebBanHangApplication [restartedMain] Starting SpringWebBanHangApplication using Java 19.0.1 on LAPTOP-12FQ7MTO with PID 8932 (D:\RollaBackCode\New folder\Project_QL_Department\target\classes started by Trung Quan in D:\RollaBackCode\New folder\Project_QL_Department)
+2023-03-05 17:44:08,761 DEBUG com.tn.SpringWebBanHangApplication [restartedMain] Running with Spring Boot v2.7.6, Spring v5.3.24
+2023-03-05 17:44:08,761 INFO com.tn.SpringWebBanHangApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-03-05 17:44:09,945 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2023-03-05 17:44:09,945 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.69]
+2023-03-05 17:44:10,002 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-03-05 17:44:10,126 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-05 17:44:10,172 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-05 17:44:10,292 INFO org.hibernate.annotations.common.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-05 17:44:10,371 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-03-05 17:44:10,705 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-03-05 17:44:10,721 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-05 17:44:11,281 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-05 17:44:12,067 INFO com.tn.SpringWebBanHangApplication [restartedMain] Started SpringWebBanHangApplication in 3.657 seconds (JVM running for 4.417)
+2023-03-05 17:44:17,091 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-05 17:44:29,954 INFO com.tn.controller.Home [http-nio-8080-exec-6] Trang Chủ
+2023-03-05 17:44:33,369 INFO com.tn.controller.DepartmentController [http-nio-8080-exec-10] department/home
+2023-03-05 17:44:34,032 INFO com.tn.controller.Home [http-nio-8080-exec-4] Trang Chủ
+2023-03-05 17:44:36,114 INFO com.tn.controller.DepartmentController [http-nio-8080-exec-5] department/home
+2023-03-05 17:44:39,788 INFO com.tn.controller.AccountController [http-nio-8080-exec-1] account/home
+2023-03-05 17:44:40,425 INFO com.tn.controller.DepartmentController [http-nio-8080-exec-7] department/home
+2023-03-05 17:44:40,513 INFO com.tn.controller.AccountController [http-nio-8080-exec-10] account/home
+2023-03-05 17:44:40,969 INFO com.tn.controller.Home [http-nio-8080-exec-3] Trang Chủ
+2023-03-05 17:44:41,002 INFO com.tn.controller.Home [http-nio-8080-exec-4] Trang Chủ
+2023-03-05 17:44:44,664 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...

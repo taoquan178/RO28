@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Department Update</title>
+    <link rel="stylesheet" th:href="${'/css/bootstrap.min.css'}">
+    <script th:src="${'/js/jquery.min.js'}"></script>
+</head>
+<body>
+<div class="container">
+  <h3 style="text-align: center" class="container_title">Update Department</h3>
+  <form th:action="${'/admin/department/update'}" method="post">
+    <input type="hidden" name="id" th:value="${department.id}" />
+
+    <div class="form-group">
+      <p>Name</p>
+      <input class="form-control" type="text" name="name" th:value="${department.name}" />
+    </div>
+    <button style="float: right" type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</body>
+<script th:src="${'/js/bootstrap.min.js'}"></script>
+</html>

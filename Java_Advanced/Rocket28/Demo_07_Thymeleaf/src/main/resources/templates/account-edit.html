@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form th:action="${'/account/update'}" method="post">
+        <input type="hidden" name="id" th:value="${product.id}" />
+        <p>Product Name</p>
+        <input type="text" name="productName" th:value="${product.productName}" />
+
+        <p>Price</p>
+        <input type="text" name="price" th:value="${product.price}" />
+
+        <p></p>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

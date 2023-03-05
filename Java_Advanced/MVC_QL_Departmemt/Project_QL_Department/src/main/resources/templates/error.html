@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <link rel="stylesheet" th:href="${'/css/bootstrap.min.css'}">
+    <script th:src="${'/js/jquery.min.js'}"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="btn-group " >
+            <button type="button" class="btn btn-primary"><a style="color: white" th:href="${'/home'}">Home</a></button>
+        </div>
+        <div class="alert alert-danger" role="alert" th:text="${error}" th:if="${error}"></div>
+        <div class="alert alert-primary" role="alert" th:text="${success}" th:if="${success}"></div>
+    </div>
+
+
+</body>
+    <script th:src="${'/js/bootstrap.min.js'}"></script>
+</html>

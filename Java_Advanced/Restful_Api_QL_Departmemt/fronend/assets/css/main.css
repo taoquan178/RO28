@@ -1,0 +1,20 @@
+#table-account{
+    width: 1000px;
+    cursor: pointer;
+}
+
+#table-department{
+    width: 1000px;
+    height: 315px;
+    cursor: pointer;
+}
+
+.selected{
+    color: rgb(168, 14, 14);
+    background-color: #7bed9f;
+}
+
+.selected1{
+    color: rgb(168, 14, 14);
+    background-color: #7bed9f;
+}

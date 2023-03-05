@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Department Add</title>
+    <link rel="stylesheet" th:href="${'/css/bootstrap.min.css'}">
+    <script th:src="${'/js/jquery.min.js'}"></script>
+</head>
+<body>
+  <div class="container">
+    <h3 style="text-align: center" class="container_title">Add Department</h3>
+    <form th:action="${'/admin/department/save'}" method="post" >
+      <div class="form-group">
+        <p>Name</p>
+        <input class="form-control" type="text" name="name">
+      </div>
+      <button style="float: right" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
+<script th:src="${'/js/bootstrap.min.js'}"></script>
+</html>

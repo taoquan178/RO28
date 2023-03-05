@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../Demo_02_Enum/pom.xml" />
+        <option value="$PROJECT_DIR$/../BTVN_02_Hibernate/pom.xml" />
+        <option value="$PROJECT_DIR$/../Demo_03_01_One_To_Many/pom.xml" />
+        <option value="$PROJECT_DIR$/../BTVN_03_01_One_To_One/pom.xml" />
+        <option value="$PROJECT_DIR$/../Demo_03_Many_To_Many/pom.xml" />
+        <option value="$PROJECT_DIR$/../BTVN_04_Many_To_Many/pom.xml" />
+        <option value="$PROJECT_DIR$/../Demo_05_01_Spring_Create_Api/pom.xml" />
+        <option value="$PROJECT_DIR$/../Demo_05_02_Spring/pom.xml" />
+        <option value="$PROJECT_DIR$/../Spring_Web_Ban_Hang/pom.xml" />
+        <option value="$PROJECT_DIR$/../Demo_07/pom.xml" />
+        <option value="$PROJECT_DIR$/../Demo_07_Thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/../Demo_08_ModelMapper/pom.xml" />
+        <option value="$PROJECT_DIR$/../Demo_09_Validate_Data/pom.xml" />
+        <option value="$PROJECT_DIR$/../Tn_Java_Advance_09_09_Config_Swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/../Demo_10_Spring_Security_Noop/pom.xml" />
+        <option value="$PROJECT_DIR$/../Demo_10_01/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="16" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>
